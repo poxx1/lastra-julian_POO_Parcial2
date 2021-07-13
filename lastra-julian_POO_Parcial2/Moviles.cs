@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace lastra_julian_POO_Parcial2
 {
-    public class Proveedor
+    public class Moviles
     {
+        public int IDMovil { get; set; }
 
     }
 }

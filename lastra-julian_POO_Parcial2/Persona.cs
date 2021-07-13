@@ -10,19 +10,14 @@ namespace lastra_julian_POO_Parcial2
     {
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-
-        // Constructor
-        public Persona(string nombre, string apellido)
-        {
-            Nombre = nombre;
-            Apellido = apellido;
-        }
-
+        public int DNI { get; set; }
+        
         // Destructor
         ~Persona()
         {
             Nombre = "";
             Apellido = "";
+            DNI = 0;
         }
     }
 }
