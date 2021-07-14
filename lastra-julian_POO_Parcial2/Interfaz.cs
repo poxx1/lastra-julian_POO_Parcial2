@@ -143,6 +143,9 @@ namespace lastra_julian_POO_Parcial2
             envio.LugarSalida = textBox15.Text;
             envio.LugarDestino = textBox14.Text;
             envio.Costo = float.Parse(textBox16.Text);
+
+            // Lambda + LinQ
+            // Ordenar los paquetes por orden de recepcion
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -176,6 +179,11 @@ namespace lastra_julian_POO_Parcial2
             else
                 MessageBox.Show("El destinatario no recibio ningun envio todavia.", "Sistema de Envios",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

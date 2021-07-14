@@ -31,6 +31,7 @@ namespace lastra_julian_POO_Parcial2
         public string LugarDestino { get; set; }
         public string Estado { get; set; } // Recibido, En proceso
         public float Costo { get; set; }
+        public string CausaDemora { get; set; }
 
         #region Metodos
 

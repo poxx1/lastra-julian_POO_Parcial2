@@ -97,6 +97,23 @@ namespace lastra_julian_POO_Parcial2
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label43 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -545,7 +562,7 @@ namespace lastra_julian_POO_Parcial2
             // 
             this.textBox14.Location = new System.Drawing.Point(938, 133);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(151, 27);
+            this.textBox14.Size = new System.Drawing.Size(155, 27);
             this.textBox14.TabIndex = 46;
             // 
             // label28
@@ -561,7 +578,7 @@ namespace lastra_julian_POO_Parcial2
             // 
             this.textBox15.Location = new System.Drawing.Point(940, 70);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(151, 27);
+            this.textBox15.Size = new System.Drawing.Size(153, 27);
             this.textBox15.TabIndex = 44;
             // 
             // label29
@@ -577,7 +594,7 @@ namespace lastra_julian_POO_Parcial2
             // 
             this.textBox16.Location = new System.Drawing.Point(938, 191);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(151, 27);
+            this.textBox16.Size = new System.Drawing.Size(155, 27);
             this.textBox16.TabIndex = 49;
             // 
             // label30
@@ -691,12 +708,162 @@ namespace lastra_julian_POO_Parcial2
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // listView2
+            // 
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(704, 392);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(206, 130);
+            this.listView2.TabIndex = 62;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(704, 369);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(177, 20);
+            this.label36.TabIndex = 63;
+            this.label36.Text = "ListView: envíos recibidos";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(472, 321);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(151, 27);
+            this.textBox20.TabIndex = 68;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(472, 298);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(50, 20);
+            this.label39.TabIndex = 67;
+            this.label39.Text = "Precio";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(472, 263);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(151, 27);
+            this.textBox21.TabIndex = 66;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(472, 240);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(122, 20);
+            this.label40.TabIndex = 65;
+            this.label40.Text = "Lugar de Destino";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(472, 321);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(151, 27);
+            this.textBox22.TabIndex = 67;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(472, 298);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(50, 20);
+            this.label41.TabIndex = 66;
+            this.label41.Text = "Precio";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(472, 263);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(151, 27);
+            this.textBox23.TabIndex = 65;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(472, 240);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(122, 20);
+            this.label42.TabIndex = 64;
+            this.label42.Text = "Lugar de Destino";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(952, 467);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(122, 39);
+            this.button9.TabIndex = 64;
+            this.button9.Text = "Cargar demora";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(949, 358);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(141, 20);
+            this.label37.TabIndex = 65;
+            this.label37.Text = "Causa de la demora";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(952, 411);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(109, 20);
+            this.label38.TabIndex = 66;
+            this.label38.Text = "Dias de retraso";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(949, 381);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(144, 27);
+            this.textBox18.TabIndex = 67;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(949, 434);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(144, 27);
+            this.textBox19.TabIndex = 68;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(942, 246);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(151, 28);
+            this.comboBox7.TabIndex = 69;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(942, 225);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(106, 20);
+            this.label43.TabIndex = 70;
+            this.label43.Text = "Lista de Envios";
+            // 
             // Interfaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1094, 588);
+            this.ClientSize = new System.Drawing.Size(1098, 588);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.label38);
+            this.Controls.Add(this.label37);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.listView2);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label34);
@@ -838,6 +1005,23 @@ namespace lastra_julian_POO_Parcial2
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Label label43;
     }
 }
 
