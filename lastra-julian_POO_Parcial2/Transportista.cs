@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace lastra_julian_POO_Parcial2
 {
-    class Paquete
+    public class Transportista : Persona
     {
+
     }
 }

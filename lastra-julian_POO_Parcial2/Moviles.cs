@@ -10,5 +10,6 @@ namespace lastra_julian_POO_Parcial2
     {
         public int IDMovil { get; set; }
 
+        public string Nombre { get; set; }
     }
 }
