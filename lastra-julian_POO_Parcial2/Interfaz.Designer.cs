@@ -114,6 +114,8 @@ namespace lastra_julian_POO_Parcial2
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label43 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -408,7 +410,7 @@ namespace lastra_julian_POO_Parcial2
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(643, 9);
+            this.label17.Location = new System.Drawing.Point(632, 9);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(139, 21);
             this.label17.TabIndex = 42;
@@ -543,7 +545,7 @@ namespace lastra_julian_POO_Parcial2
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(963, 9);
+            this.label26.Location = new System.Drawing.Point(979, 9);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(69, 21);
             this.label26.TabIndex = 48;
@@ -722,9 +724,9 @@ namespace lastra_julian_POO_Parcial2
             this.label36.AutoSize = true;
             this.label36.Location = new System.Drawing.Point(704, 369);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(177, 20);
+            this.label36.Size = new System.Drawing.Size(220, 20);
             this.label36.TabIndex = 63;
-            this.label36.Text = "ListView: envíos recibidos";
+            this.label36.Text = "Orden de envio de los paquetes";
             // 
             // textBox20
             // 
@@ -792,7 +794,7 @@ namespace lastra_julian_POO_Parcial2
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(952, 467);
+            this.button9.Location = new System.Drawing.Point(963, 467);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(122, 39);
             this.button9.TabIndex = 64;
@@ -849,12 +851,34 @@ namespace lastra_julian_POO_Parcial2
             this.label43.TabIndex = 70;
             this.label43.Text = "Lista de Envios";
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(963, 528);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(122, 52);
+            this.button10.TabIndex = 71;
+            this.button10.Text = "Confirmar recepcion";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(704, 528);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(211, 52);
+            this.button11.TabIndex = 72;
+            this.button11.Text = "Mostrar detalles del envio";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // Interfaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1098, 588);
+            this.ClientSize = new System.Drawing.Size(1096, 584);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.comboBox7);
             this.Controls.Add(this.textBox19);
@@ -927,7 +951,7 @@ namespace lastra_julian_POO_Parcial2
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Interfaz";
-            this.Text = "Lista de Paquetes";
+            this.Text = "Parcial 2 POO Lastra Julian Marcos: Envios de paquetes";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -1022,6 +1046,8 @@ namespace lastra_julian_POO_Parcial2
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
     }
 }
 

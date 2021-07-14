@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace lastra_julian_POO_Parcial2
@@ -146,6 +147,14 @@ namespace lastra_julian_POO_Parcial2
 
             // Lambda + LinQ
             // Ordenar los paquetes por orden de recepcion
+
+            listView2.Items.Clear();
+
+            var listaOrdenEnvio = listaEnvios.OrderBy(e => e.FechaLLegada);
+            foreach (var envio2 in listaEnvios)
+            {
+                listView2.Items.Add(envio2.FechaLLegada.ToString());
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -183,7 +192,54 @@ namespace lastra_julian_POO_Parcial2
 
         private void button9_Click(object sender, EventArgs e)
         {
+            // Le agrego la causa de la demora
+            var envioActual = (Envio)comboBox7.SelectedItem;
+            envioActual.CausaDemora = textBox18.Text;
+            int demoraEnDias = Int32.Parse(textBox19.Text);
 
+            // Le agrego los dias de demora al envio
+            envioActual.FechaLLegada = envioActual.CalcularLLegada(demoraEnDias,envioActual.FechaLLegada);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            // Le cambio el estado para saber que fue entregado
+            var envioActual = (Envio)comboBox7.SelectedItem;
+            envioActual.Estado = "Recibido";
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            var envioActual = (Envio)comboBox7.SelectedItem;
+
+            // Cliente
+            textBox1.Text = envioActual.cliente.Nombre;
+            textBox2.Text = envioActual.cliente.Apellido;
+            textBox3.Text = envioActual.cliente.DNI.ToString();
+
+            // Proveedor
+            textBox4.Text = envioActual.proveedor.Nombre;
+
+            // Movil
+            textBox5.Text = envioActual.movil.Nombre;
+
+            // Responsable
+            textBox6.Text = envioActual.responsable.Nombre;
+            textBox8.Text = envioActual.responsable.Apellido;
+            textBox7.Text = envioActual.responsable.DNI.ToString();
+
+            // Transportista
+            textBox11.Text = envioActual.transportista.Nombre;
+            textBox10.Text = envioActual.transportista.Apellido;
+            textBox9.Text = envioActual.transportista.DNI.ToString();
+
+            // Paquete
+            textBox17.Text = envioActual.paquete.Contenido;
+
+            // Envio
+            textBox15.Text = envioActual.LugarSalida;
+            textBox14.Text = envioActual.LugarDestino;
+            textBox6.Text = envioActual.Costo.ToString();
         }
     }
 }

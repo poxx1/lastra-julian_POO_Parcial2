@@ -42,6 +42,15 @@ namespace lastra_julian_POO_Parcial2
 
             return fechaActual.AddDays(3);
         }
+
+        // Metodo Sobrecargado
+        public DateTime CalcularLLegada(int demora,DateTime fechaAnterior)
+        {
+            var fechaActual = fechaAnterior;
+
+            return fechaActual.AddDays(demora);
+        }
+
         #endregion
     }
 

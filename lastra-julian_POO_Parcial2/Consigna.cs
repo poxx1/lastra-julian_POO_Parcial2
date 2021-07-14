@@ -28,14 +28,17 @@ namespace lastra_julian_POO_Parcial2
      Por cada envío será registrado con el móvil la fecha, lugar de salida, lugar de destino, y 
      el costo que ha de tener ese envío.
 
-     -- El sistema permitirá ver por cada Destinatario los envíos realizados y por cada envío los detalles del mismo. 
+     El sistema permitirá ver por cada Destinatario los envíos realizados 
+     y por cada envío los detalles del mismo. 
+     
      Cada vez que se confirma la recepción del paquete el sistema dará por cerrado el proceso en cuestión.
 
      Si existe demora el sistema deberá registrar las causas.
        
-        Puede persistir datos en archivos CSV. 
+      --   Puede persistir datos en archivos CSV. 
 
-        Requerimientos:
+     
+     Requerimientos:
         
         Proyecto WinForm
             Clase abstracta
@@ -52,9 +55,9 @@ namespace lastra_julian_POO_Parcial2
         Eventos
         DataGridView
         ListView
-            Expresiones Lambda
-            LinQ
-            Sobrecarga de Constructores
+        Expresiones Lambda
+        LinQ
+        Sobrecarga de Constructores
             Metodos Static
         List<>
         */
