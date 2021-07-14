@@ -10,6 +10,7 @@ namespace lastra_julian_POO_Parcial2
         public int counterClientes = 0;
         public int counterMoviles = 0;
         public int counterProveedores = 0;
+        public int counterEnvios = 0;
 
         public List<Clientes> listaClientes = new List<Clientes>();
         public List<Proveedor> listaProveedores = new List<Proveedor>();
@@ -124,8 +125,8 @@ namespace lastra_julian_POO_Parcial2
             listaPaquetes.Add(paquete);
 
             comboBox6.DataSource = null;
-            comboBox6.DataSource = listaTransportistas;
-            comboBox6.DisplayMember = "Apellido";
+            comboBox6.DataSource = listaPaquetes;
+            comboBox6.DisplayMember = "Contenido";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -144,6 +145,15 @@ namespace lastra_julian_POO_Parcial2
             envio.LugarSalida = textBox15.Text;
             envio.LugarDestino = textBox14.Text;
             envio.Costo = float.Parse(textBox16.Text);
+
+            counterEnvios += 1;
+            envio.ID = counterEnvios;
+
+            listaEnvios.Add(envio);
+
+            comboBox7.DataSource = null;
+            comboBox7.DataSource = listaEnvios;
+            comboBox7.DisplayMember = "ID";
 
             // Lambda + LinQ
             // Ordenar los paquetes por orden de recepcion
